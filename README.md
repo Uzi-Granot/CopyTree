@@ -1,2 +1,6 @@
 # CopyTree
 Backup Utility implementing Backup Rotation Scheme (Open Source Windows Forms Application in C#)
+
+For full documentation and test program visit CodeProject article <a href="https://www.codeproject.com/Articles/1223887/Backup-Utility-implementing-Backup-Rotation-Scheme">Backup Utility implementing Backup Rotation Scheme</a>.
+
+CopyTree is a Backup Utility implementing Backup Rotation Scheme. It is an open source Windows Forms Application written in C#. The utility was designed to perform a backup of critical folders to multiple backup folders. The result of running the utility is that each backup folder is an exact copy of the source folder at a given time. Each time the utility is run, the oldest backup folder is updated with the current source folder. In other words, the utility rotates between the backup folders. The backup update process ensures that the backup directory structure is the same as the source directory. New files are copied from source to backup. Files that were deleted will be deleted from the backup. Files that were modified are copied over the old version. Files that were not modified are ignored. Except for the first time, the result is a very efficient backup process.
